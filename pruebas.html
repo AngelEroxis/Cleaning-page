@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial INF 631</title>
+    <link rel="stylesheet" href="pruebas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="social">
+                lunes-viernes: 8:00 - 15:00 | 2022 EXAMEN DE INF 631
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <nav> 
+            <div class="container">
+                <img src="modelo3/logo.jpg" alt="Logo de la empresa" class="logo">
+                <div class="menu-icon" id="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#">LBdQ</a></li>
+                    <li><a href="#cleaning">Trabaja con nosotros</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#container2">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="inicio">
+			<div class="inicio-text">
+				<h1>CUIDAMOS DE TU <br> COMUNIDAD DE <br> VECINOS, OFICINA O <br> COMECIO</h1>
+				<p>De manera profesional, eficaz, transparente y adaptada a tus necesidades</p>
+                <div class="caja">
+                    <div class="services-banner">
+                        <h2>SEVICIOS INTEGRADOS</h2>
+                        <p>Limpieza y Desinfección | Mantenimiento Técnico | Jardines y Piscinas</p>
+                    </div>
+                </div>
+			</div>
+		</section>
+        <br><br><br><br><br><br>
+        <section id="services" class="section-one"> 
+            <div class="container">
+                <div class="text-content">
+                    <h2>Limpieza y desinfección</h2>
+                    <br>
+                    <p><b>Que todo esté limpio,</b> en orden, cuidado, seguro. <br>Entrar a tu portal y 
+                        <b>que huela bien,</b> subir en el <br>ascensor y saber que está <b>desinfectado,</b> 
+                        ver cada dia <br>que alguien cuida los detalles por tí, por que <b>tu <br>espacio</b> 
+                        ya vivas o trabajes, <b>nos importa y queremos <br>que te sientas bien</b> y en casa.</p>
+                </div>
+                <div class="image-container">
+                    <img src="modelo3/labordequipo_limpieza_comunidades.jpg" alt="Cleaning Services"> 
+                </div>
+            </div>
+        </section>
+
+        <section class="section-two">
+            <div class="container">
+                <div class="image-container">
+                    <img src="modelo3/jardineria-lbdq_1.jpg" alt="Gardening Services">
+                </div>
+                <div class="text-content">
+                    <h2>Jardines y Piscinas</h2>
+                    <br>
+                    <p>Si hay algo de lo que <b>disfrutar y presumir</b> en un <br> Residencial es de sus <b>zonas ajardinadas y las piscina.</b><br> 
+                        Si hay algo que marca la diferencia es unos <b>jardines <br> bien cuidados</b> y una <b>piscina en perfecto estado</b> 
+                        para <br> el baño. Asomarse a la terraza y ver que todo está bien <br> y en orden, ese es el principal empeño 
+                        de los <br> profesionales de <b>Labordequipo,</b> por eso <b>mimamos lo <br> que mejor habla de tu Residencial.</b></p>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="cleaning" class="cleaning-banner">
+            <div class="container3">
+                <h2>¿Quieres saber cómo podemos mejorar la limpieza y el mantenimiento de tu comunidad, oficina o comercio?</h2>
+                <p>Nuestro equipo y nuestros procesos de trabajo e innovación marcan la diferencia.</p>
+                <a href="#" class="btn btn-primary">Solicita un estudio personalizado gratis</a>
+            </div>
+        </section>
+        <br><br>
+        <div id="container2" class="container2">
+            <section class="form-section">
+                <form action="#" method="post">
+                    <h2>Consigue tu estudio personalizado gratis</h2>
+                    <br>
+                    <p>Para tu comunidad de vecinos, negocio, oficina, garaje o vivienda</p>
+                    <br><br>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="mensaje" placeholder="Mensaje" rows="5"></textarea>
+                    <input type="checkbox" name="privacidad" required>
+                    <label for="privacidad">He leído y acepto la política de privacidad.</label>
+                    <br><br>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </section>
+            <footer>
+                <p>©2022 EXAMEN DE INF 631</p>
+            </footer>
+        </div>
+    </main>
+
+    <script>
+        // Función para alternar el menú
+        function toggleMenu(event) {
+            event.stopPropagation(); // Evita que el clic se propague al documento
+            const navLinks = document.getElementById('nav-links');
+            const menuIcon = document.getElementById('menu-icon');
+            navLinks.classList.toggle('show');
+            // Cambiar el ícono y los atributos aria
+            if (menuIcon.classList.contains('active')) {
+                menuIcon.classList.remove('active');
+                menuIcon.innerHTML = '<i class="fas fa-bars"></i>';
+                menuIcon.setAttribute('aria-expanded', 'false');
+            } else {
+                menuIcon.classList.add('active');
+                menuIcon.innerHTML = '<i class="fas fa-times"></i>'; // Ícono de 'X'
+                menuIcon.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Event listener para el ícono del menú
+        document.getElementById('menu-icon').addEventListener('click', toggleMenu);
+
+        // Cerrar el menú al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('nav');
+            const menuIcon = document.getElementById('menu-icon');
+            const navLinks = document.getElementById('nav-links');
+            if (!nav.contains(event.target)) {
+                if (navLinks.classList.contains('show')) {
+                    navLinks.classList.remove('show');
+                    menuIcon.classList.remove('active');
+                    menuIcon.innerHTML = '<i class="fas fa-bars"></i>';
+                    menuIcon.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        // Evitar que los clics dentro del menú cierren el mismo
+        document.getElementById('nav-links').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
+</body>
+</html>
